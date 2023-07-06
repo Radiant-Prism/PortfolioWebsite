@@ -1,15 +1,16 @@
+/*This section is used to edit lists*/
 .horizontalList{
-    display: flex;
+    display: flex !important;
     list-style: none;
     padding: 0;
 }
 .horizontalList li{
     display: inline-block;
-    margin-right: 10px;
+    margin: 10px;
 }
 
-/*This sectino has all the widths and heights for different types of objects*/
-.height100{
+/*This section has all the widths and heights for different types of objects*/
+.menuHeight{
     height: 100px;
 }
 
@@ -19,21 +20,26 @@
 
 /*This section has all the padding and margins for different types of objects*/
 .paddingCenter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
-.alignLeft{
-    margin-right: auto;
-}
-
-.alignRight{
-    margin-left: auto;
+.spacer{
+    width: 100%;
+    height: 0px;
 }
 
 .margin10{
     margin: 10px;
+}
+
+.onelineText{
+    white-space: nowrap;
+}
+
+.navButton li{
+    padding: 10px;
+    border-radius: 10px;
 }
 
 /*This section has all the class colours that will be used in the website*/
@@ -50,4 +56,25 @@
 .linkColor{
     color: black;
     background-color: #bbd1ea;
+}
+
+@media (max-width: 768px){
+    .horizontalList{
+        display: grid !important;
+        place-items: center;
+    }
+
+    .menuHeight{
+        height: 200px;
+    }
+
+    .spacer{
+        display: none;
+    }
+}
+
+/*Debug section*/
+.addBorder{
+    border: red;
+    border-style: dashed;
 }
