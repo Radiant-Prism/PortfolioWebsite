@@ -1,3 +1,9 @@
+/* Custom Fonts */
+@font-face {
+  font-family: BoldMono;
+  src: url(./Fonts/BoldMono.ttf);
+}
+
 /* CSS Reset */
 html,
 body,
@@ -66,8 +72,12 @@ td {
   border: 0;
   font-weight: inherit;
   font-style: inherit;
-  font-family: Helvetica;
+  font-family: BoldMono;
   vertical-align: baseline;
+}
+
+body, html{
+  height: 100%;
 }
 
 /* Remove default list styling */
