@@ -1,8 +1,14 @@
+:root{
+    --primary-color: #282c34;
+    --accent-color: #E08645;
+    --link-color: #9A2D26;
+}
+
 .logo{
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    border: #E08645;
+    border: var(--accent-color);
     border-width: 5px;
     border-style: solid;
 }
@@ -42,26 +48,30 @@
     margin: 10px;
 }
 
+.margin20{
+    margin: 20px;
+}
+
 /*This section has all the class colours that will be used in the website*/
 .mainColor{
-    color: #282c34;
+    color: var(--primary-color);
 }
 .mainColorBG{
     color: #fff;
-    background-color: #282c34;
+    background-color: var(--primary-color);
 }
 
 .accentColor{
-    color: #E08645;
+    color: var(--accent-color);
 }
 .accentColorBG{
     color: #fff;
-    background-color: #E08645;
+    background-color: var(--accent-color);
 }
 
 .linkColor{
     color: black;
-    background-color: #9A2D26;
+    background-color: var(--link-color);
 }
 
 /*Debug section*/
