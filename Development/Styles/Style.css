@@ -13,6 +13,21 @@
     border-style: solid;
 }
 
+.nav ul{
+    display: flex;
+    align-items: center;
+}
+.nav li{
+    margin: 10px;
+}
+.nav a{
+    color: white;
+    transition: color 0.2s ease;
+}
+.nav a:hover{
+    color: var(--link-color);
+    transition: color 0.2s ease;
+}
 /*This section is used to change the fonts */
 .titleFont{
     font-size:xx-large;
@@ -32,6 +47,10 @@
 }
 
 /*This section has all the padding and margins for different types of objects*/
+.relativePos{
+    position: relative;
+}
+
 .centerHorizontal{
     display: flex;
     flex-direction: column;

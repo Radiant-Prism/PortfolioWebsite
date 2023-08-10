@@ -9,16 +9,28 @@
     <link rel="stylesheet" href="./Styles/Reset.css"/>
 </head>
 <body>
-    <div name="header" class="widthFull heightFull centerHorizontal centerVertical">
+    <div id="Home" name="Home" class="widthFull heightFull centerHorizontal centerVertical relativePos">
         <img name="Logo" src="./Images/IMG_1200.jpg" class="logo"/>
 
-        <div name="Title Div" class="centerHorizontal accentColor titleFont margin20">
+        <div name="Title Div" class="accentColor titleFont margin20">
             <h1 name="Title1">My Portfolio</h1>
         </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a name="Home Link" href="#Home">Home</a></li>
+                <li><a name="About Link" href="#About">About Me</a></li>
+                <li><a name="Projects Link" href="#Projects">My Projects</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <div name="About me Section" class="widthFull heightFull">
+    <div id="About" name="About me Section" class="widthFull heightFull">
         <h1 name="About me Title" class="titleFont accentColor">About me</h1>
+    </div>
+
+    <div id="Projects" name="Projects Section" class="widthFull heightFull">
+        <h1 name="Projects Title" class="titleFont accentColor">My Projects</h1>
     </div>
 </body>
 </html>
