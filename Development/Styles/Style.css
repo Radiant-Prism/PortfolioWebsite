@@ -28,9 +28,10 @@
     color: var(--link-color);
     transition: color 0.2s ease;
 }
+
 /*This section is used to change the fonts */
 .titleFont{
-    font-size:xx-large;
+    font-size: xx-large;
 }
 
 .italicFont{
@@ -49,6 +50,10 @@
 /*This section has all the padding and margins for different types of objects*/
 .relativePos{
     position: relative;
+}
+
+.centerContent{
+    margin: auto auto;
 }
 
 .centerHorizontal{
@@ -94,7 +99,7 @@
 }
 
 /*Debug section*/
-.addBorder{
+.db{
     border: red;
     border-style: dashed;
 }
