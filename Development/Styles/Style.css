@@ -16,12 +16,12 @@
 .nav ul{
     position: fixed;
     top: 0;
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    right: 50%;
+    transform: translate(50%, 0);
     text-align: right;
 }
 .nav li{
+    float: inline-end;
     margin: 10px;
 }
 .nav a{
