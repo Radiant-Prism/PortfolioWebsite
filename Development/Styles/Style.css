@@ -13,16 +13,17 @@
     border-style: solid;
 }
 
-.nav ul{
+.nav{
     position: fixed;
-    top: 0;
-    right: 50%;
-    transform: translate(50%, 0);
+    width: 100%;
+}
+.nav ul{
+    position: inherit;
     text-align: right;
 }
 .nav li{
-    float: inline-end;
     margin: 10px;
+    margin-bottom: 20px;
 }
 .nav a{
     color: white;
