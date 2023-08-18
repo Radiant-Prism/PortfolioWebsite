@@ -18,7 +18,7 @@ let scrolled = false;
 window.addEventListener("scroll", (scrollEvent) => {
   let scrollAmount = window.scrollY;
 
-  if(scrollAmount > 0) {
+  if(scrollAmount > 150) {
     if(scrolled) return;
     scrolled = true;
 
@@ -27,6 +27,7 @@ window.addEventListener("scroll", (scrollEvent) => {
     return;
   }
 
+  if(!scrolled) return;
   scrolled = false;
 
   nav_ul.style.display = "flex";
