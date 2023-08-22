@@ -18,7 +18,7 @@ let scrolled = false;
 window.addEventListener("scroll", (scrollEvent) => {
   let scrollAmount = window.scrollY;
 
-  if(scrollAmount > 150) {
+  if(scrollAmount > 100) {
     if(scrolled) return;
     scrolled = true;
 

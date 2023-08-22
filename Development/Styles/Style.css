@@ -34,6 +34,12 @@
     transition: color 0.2s ease;
 }
 
+.textSpace{
+    width: 60%;
+    padding-top: 10px;
+    font-size: large;
+}
+
 /*This section is used to change the fonts */
 .titleFont{
     font-size: xx-large;
@@ -41,6 +47,10 @@
 
 .italicFont{
     font-style: italic;
+}
+
+.alignTextCenter{
+    text-align: center;
 }
 
 /*This section has all the widths and heights for different types of objects*/
@@ -64,12 +74,12 @@
     justify-content: center;
 }
 
-.margin10{
-    margin: 10px;
-}
-
 .margin20{
     margin: 20px;
+}
+
+.padding10{
+    padding: 10px;
 }
 
 /*This section has all the class colours that will be used in the website*/
