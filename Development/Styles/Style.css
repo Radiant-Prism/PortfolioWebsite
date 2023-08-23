@@ -35,9 +35,11 @@
 }
 
 .textSpace{
-    width: 60%;
+    width: 75%;
     padding-top: 10px;
     font-size: large;
+    word-spacing: 5px;
+    line-height: 27px;
 }
 
 /*This section is used to change the fonts */
