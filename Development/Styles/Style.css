@@ -36,13 +36,17 @@
 
 .textSpace{
     width: 90%;
-    padding-top: 10px;
-    font-size: 17px;
     word-spacing: 6px;
-    line-height: 27px;
+    line-height: 30px;
 }
 .textSpace p{
-    padding-right: 20px;
+    padding-right: 30px;
+}
+
+.line{
+    border: white solid 1px;
+    margin: 20px 0px;
+    width: 90%;
 }
 
 /*This section is used to change the fonts */
@@ -84,7 +88,7 @@
 }
 
 .padding10{
-    padding: 10px;
+    padding: 20px;
 }
 
 .padding20Top{
