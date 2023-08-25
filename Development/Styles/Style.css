@@ -4,6 +4,10 @@
     --link-color: #9A2D26;
 }
 
+br{
+    margin-bottom: 15px;
+}
+
 .logo{
     width: 200px;
     height: 200px;
@@ -34,13 +38,16 @@
     transition: color 0.2s ease;
 }
 
-.textSpace{
+.infoContainer{
+    display: flex;
     width: 90%;
+}
+
+.textSpace{
     word-spacing: 6px;
     line-height: 30px;
-}
-.textSpace p{
     padding-right: 30px;
+    width: 100%;
 }
 
 .line{
@@ -87,7 +94,7 @@
     margin: 20px;
 }
 
-.padding10{
+.padding20{
     padding: 20px;
 }
 
@@ -95,8 +102,8 @@
     padding-top: 20px;
 }
 
-.displayFlex{
-    display: flex;
+.passing30Right{
+    padding-right: 30px;
 }
 
 /*This section has all the class colours that will be used in the website*/
