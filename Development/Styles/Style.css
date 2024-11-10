@@ -5,6 +5,11 @@
 }
 
 
+br{
+    margin-bottom: 15px;
+}
+
+
 /* The logo at the top of the page */
 .logo{
     width: 200px;
@@ -55,6 +60,26 @@
 }
 
 
+/* For text fields */
+.infoContainer{
+    display: flex;
+    width: 90%;
+}
+
+.textSpace{
+    word-spacing: 6px;
+    line-height: 30px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+.line{
+    border: white solid 1px;
+    margin: 20px 0px;
+    width: 90%;
+}
+
+
 /*This section is used to change the fonts */
 .titleFont{
     font-size: xx-large;
@@ -62,6 +87,10 @@
 
 .italicFont{
     font-style: italic;
+}
+
+.alignTextCenter{
+    text-align: center;
 }
 
 
@@ -80,12 +109,20 @@
     justify-content: center;
 }
 
-.margin10{
-    margin: 10px;
-}
-
 .margin20{
     margin: 20px;
+}
+
+.padding20{
+    padding: 20px;
+}
+
+.padding20Top{
+    padding-top: 20px;
+}
+
+.passing30Right{
+    padding-right: 30px;
 }
 
 

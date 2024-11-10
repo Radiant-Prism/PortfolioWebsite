@@ -3,6 +3,10 @@
   font-family: 'BoldMono';
   src: url('/Development/Fonts/BoldMono.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'Mono';
+  src: url('/Development/Fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
+}
 
 
 /* CSS Reset */
@@ -76,6 +80,11 @@ td {
   font-family: 'Roboto Mono', monospace;
   font-optical-sizing: auto;
   vertical-align: baseline;
+}
+
+p{
+  font-family: 'Mono' !important;
+  font-size: 19px;
 }
 
 body, html{
