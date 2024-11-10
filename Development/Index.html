@@ -7,9 +7,13 @@
     
     <link rel="stylesheet" href="./Styles/Style.css"/>
     <link rel="stylesheet" href="./Styles/Reset.css"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="Home" name="Home" class="widthFull heightFull relativePos centerContent">
+    <div id="Home" name="Home" class="section centerContent">
         <img name="Logo" src="./Images/IMG_1200.jpg" class="logo"/>
         
         <div name="Title Div" class="accentColor titleFont margin20 alignTextCenter">
@@ -17,7 +21,7 @@
         </div>
     </div>
     
-    <div id="About" name="About me Section" class="widthFull heightFull padding20">
+    <div id="About" name="About me Section" class="section">
         <h1 name="About me Title" class="titleFont accentColor">About me</h1>
 
         <div name="infoContainer" class="padding20Top infoContainer">
@@ -67,8 +71,8 @@
             </div>
         </div>
     </div>
-    
-    <div id="Projects" name="Projects Section" class="widthFull heightFull padding20">
+
+    <div id="Projects" name="Projects Section" class="section padding20">
         <h1 name="Projects Title" class="titleFont accentColor">My Projects</h1>
 
         <div name="infoContainer" class="infoContainer padding20Top">
@@ -82,13 +86,13 @@
     </div>
     
     <nav class="nav">
-        <ul>
-            <li><a name="Home Link" href="#Home">Home</a></li>
+        <ul class="toBottom" id="nav_links">
+            <li><a id="home_link" name="Home Link" href="#Home">Home</a></li>
             <li><a name="About Link" href="#About">About Me</a></li>
             <li><a name="Projects Link" href="#Projects">My Projects</a></li>
         </ul>
     </nav>
     
-    <script src="/Development/Apps/nav.js" type="text/javascript"></script>
+    <script src="./Apps/nav.js" type="text/javascript"></script>
 </body>
 </html>

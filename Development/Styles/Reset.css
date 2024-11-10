@@ -8,6 +8,7 @@
   src: url('/Development/Fonts/Roboto_Mono/RobotoMono-VariableFont_wght.ttf') format('truetype');
 }
 
+
 /* CSS Reset */
 html,
 body,
@@ -76,7 +77,8 @@ td {
   border: 0;
   font-weight: inherit;
   font-style: inherit;
-  font-family: 'BoldMono';
+  font-family: 'Roboto Mono', monospace;
+  font-optical-sizing: auto;
   vertical-align: baseline;
 }
 
@@ -90,17 +92,20 @@ body, html{
   scroll-behavior: smooth;
 }
 
+
 /* Remove default list styling */
 ol,
 ul {
   list-style: none;
 }
 
+
 /* Remove hyperlink styles */
 a {
   text-decoration: none;
   color: inherit;
 }
+
 
 /* Set default box-sizing to border-box */
 * {
