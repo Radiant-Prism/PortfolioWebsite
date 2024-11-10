@@ -4,6 +4,7 @@
   src: url('/Development/Fonts/BoldMono.ttf') format('truetype');
 }
 
+
 /* CSS Reset */
 html,
 body,
@@ -82,17 +83,20 @@ body, html{
   scroll-behavior: smooth;
 }
 
+
 /* Remove default list styling */
 ol,
 ul {
   list-style: none;
 }
 
+
 /* Remove hyperlink styles */
 a {
   text-decoration: none;
   color: inherit;
 }
+
 
 /* Set default box-sizing to border-box */
 * {

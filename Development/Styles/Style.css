@@ -4,6 +4,8 @@
     --link-color: #9A2D26;
 }
 
+
+/* The logo at the top of the page */
 .logo{
     width: 200px;
     height: 200px;
@@ -12,6 +14,7 @@
     border-width: 5px;
     border-style: solid;
 }
+
 
 /* Style the navigation */
 .nav{
@@ -61,20 +64,15 @@
     font-style: italic;
 }
 
-/*This section has all the widths and heights for different types of objects*/
-.widthFull{
+
+/* For the different sections of the website */
+.section {
     width: 100%;
+    min-height: 100vh;
 }
 
-.heightFull{
-    height: 100vh;
-}
 
 /*This section has all the padding and margins for different types of objects*/
-.relativePos{
-    position: relative;
-}
-
 .centerContent{
     display: flex;
     flex-direction: column;
@@ -89,6 +87,7 @@
 .margin20{
     margin: 20px;
 }
+
 
 /*This section has all the class colours that will be used in the website*/
 .mainColor{
@@ -111,6 +110,7 @@
     color: black;
     background-color: var(--link-color);
 }
+
 
 /*Debug section*/
 .db{

@@ -3,9 +3,12 @@ const nav_ul = document.querySelector("ul");
 const home_link = document.getElementById("home_link")
 
 
+// Variable to keep track of the navigations position
 let atBottom = true;
 if (window.scrollY > 10) atBottom = false;
 
+
+// functions to move the navigation
 function navToBottom() {
   if (atBottom) return;
 
@@ -25,20 +28,22 @@ function navToSide() {
 }
 
 
+// If home link is pressed, send navigation to bottom before reaching top of page
 home_link.addEventListener("click", () => {
   navToBottom()
   atBottom = false
 })
 
+// If scroll stops before reaching the top, return navigation to side of the page
+window.onscrollend = function () {
+  if (window.scrollY > 10) {
+    atBottom = true
+    navToSide()
+  }
+}
 
-window.addEventListener("wheel", () => {
-  if (window.scrollY > 10) atBottom = true
-})
-
-window.addEventListener("scroll", (event) => {
-  console.log(event.target);
-  
-
+// Move navigation between bottom and side of the page
+window.addEventListener("scroll", () => {
   if (window.scrollY > 10) {
     navToSide();
   } else {
