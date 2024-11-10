@@ -72,7 +72,8 @@ td {
   border: 0;
   font-weight: inherit;
   font-style: inherit;
-  font-family: 'BoldMono';
+  font-family: 'Roboto Mono', monospace;
+  font-optical-sizing: auto;
   vertical-align: baseline;
 }
 

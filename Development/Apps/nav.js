@@ -1,35 +1,47 @@
-const nav = document.querySelector("nav");
-const nav_ul = nav.querySelector("ul");
-const nav_li = nav_ul.querySelector("li");
+//const nav = document.querySelector("nav")
+const nav_ul = document.querySelector("ul");
+const home_link = document.getElementById("home_link")
 
-let nav_ani = nav_ul.animate([
-  { bottom: "0", right: "50%", transform: "translate(50%, 0)" },
-  { bottom: "50%", right: "0", transform: "translate(0, 50%)"},
-],{
-  duration: 300,
-  fill: "both",
-  easing: "ease-in-out"
-});
-nav_ani.reverse();
-nav_ul.style.display = "flex";
 
-let scrolled = false;
+let atBottom = true;
+if (window.scrollY > 10) atBottom = false;
 
-window.addEventListener("scroll", (scrollEvent) => {
-  let scrollAmount = window.scrollY;
+function navToBottom() {
+  if (atBottom) return;
 
-  if(scrollAmount > 150) {
-    if(scrolled) return;
-    scrolled = true;
+  nav_ul.classList.remove("toSide")
+  nav_ul.classList.add("toBottom")
 
-    nav_ani.reverse();
-    nav_ul.style.display = "block";
-    return;
+  atBottom = true;
+}
+
+function navToSide() {
+  if (atBottom == false) return;
+
+  nav_ul.classList.add("toSide")
+  nav_ul.classList.remove("toBottom")
+
+  atBottom = false;
+}
+
+
+home_link.addEventListener("click", () => {
+  navToBottom()
+  atBottom = false
+})
+
+
+window.addEventListener("wheel", () => {
+  if (window.scrollY > 10) atBottom = true
+})
+
+window.addEventListener("scroll", (event) => {
+  console.log(event.target);
+  
+
+  if (window.scrollY > 10) {
+    navToSide();
+  } else {
+    navToBottom();
   }
-
-  if(!scrolled) return;
-  scrolled = false;
-
-  nav_ul.style.display = "flex";
-  nav_ani.reverse();
 });

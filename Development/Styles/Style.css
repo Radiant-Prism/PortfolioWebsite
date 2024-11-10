@@ -13,6 +13,7 @@
     border-style: solid;
 }
 
+/* Style the navigation */
 .nav{
     position: fixed;
     width: 100%;
@@ -20,6 +21,9 @@
 .nav ul{
     position: inherit;
     text-align: right;
+    display: flex;
+    transition: flex-direction, bottom, right, transform;
+    transition-duration: 0.5s;
 }
 .nav li{
     margin: 10px;
@@ -33,6 +37,20 @@
     color: var(--link-color);
     transition: color 0.2s ease;
 }
+
+.toSide {
+    flex-direction: column;
+    bottom: 50%;
+    right: 0;
+    transform: translate(0, 50%);
+}
+.toBottom {
+    flex-direction: row;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 0);
+}
+
 
 /*This section is used to change the fonts */
 .titleFont{
