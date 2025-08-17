@@ -93,6 +93,10 @@ br{
     text-align: center;
 }
 
+.boldFont{
+    font-weight: bold;
+}
+
 
 /* For the different sections of the website */
 .section {
