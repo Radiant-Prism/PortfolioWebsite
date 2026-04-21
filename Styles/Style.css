@@ -148,8 +148,8 @@ br{
 }
 
 .linkColor{
-    color: black;
-    background-color: var(--link-color);
+    color: var(--link-color);
+    text-decoration-line: underline;
 }
 
 
